@@ -20,7 +20,6 @@ function App() {
     console.log('GET request has been triggered');
     // use axios to get pics from /gallery path
     axios.get('/gallery').then( response => {
-      console.log(response);
       setPictureGallery(response.data);
     }).catch ( err => {
       console.log('There was an error in the GET route', err);
