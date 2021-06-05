@@ -13,13 +13,6 @@
   font-size: 1.5em;
 }
 
-/* .flex-box-display {
-  display: flexbox;
-  background-color: #eeeeee;
-  justify-content: space-evenly;
-  flex-direction: row;
-
-} */
 
 .flex-container {
   display: flex;
@@ -29,8 +22,8 @@
 }
 
 .flex-box-display-child {
-  background-color: #eeeeee;
   flex-direction: column;
+  
 } 
 
 h2 {
