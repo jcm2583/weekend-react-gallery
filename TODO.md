@@ -5,17 +5,17 @@
     [ x ] - Test GET and PUT routes through Postman to check that they are working
 
 [ ] - Client Side
-    [ ] - Import Axios
-    [ ] - Import useState and useEffect
-    [ ] - Create GET request to render pictures in array to the page
+    [ x ] - Import Axios
+    [ x ] - Import useState and useEffect
+    [ x ] - Create GET request to render pictures in array to the page
         [ ] - Will need to create separate components and import them to the app.jsx
 
-[ ] - Image Gallery
-    [ ] - Will need multiple components to make up the gallery
-    [ ] - Need to create GalleryList and GalleryItem components
+[ x ] - Image Gallery
+    [ x ] - Will need multiple components to make up the gallery
+    [ x ] - Need to create GalleryList and GalleryItem components
 
 [ ] - GalleryList Component
-    [ ] - Will need to create a function that will loop through the array and render the pictures to the DOM
+    [ x ] - Will need to create a function that will loop through the array and render the pictures to the DOM
     [ ] - Need to import GET from app.jsx component and state
     [ ] - Need to import GalleryItem components
 

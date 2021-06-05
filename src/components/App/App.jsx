@@ -33,8 +33,8 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <h3>Some things that are most important to me...</h3>
-        <main className="flex-container">
+        <h2>Some things that are most important to me...</h2>
+        <main>
         <GalleryList pictureGallery={pictureGallery} getPictures={getPictures}/>
         </main>
       </div>
