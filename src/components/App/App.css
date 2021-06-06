@@ -13,19 +13,38 @@
   font-size: 1.5em;
 }
 
+.descriptionClass {
+  font-size: larger;
+  font-weight: 600;
+}
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: baseline;
 }
 
-.flex-box-display-child {
-  flex-direction: column;
-  
-} 
+
 
 h2 {
   color: #222831;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+img {
+  border-style: solid;
+  border-width: 16px;
+  border-color: #222831;
+}
+
+.likeDisplay {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.space-between {
+  margin-top: 16px;
 }

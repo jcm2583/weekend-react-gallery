@@ -8,22 +8,21 @@ function GalleryItem({ picture, getPictures, pictureGallery }) {
     // log that state to make sure that it is showing correctly
     // console.log(isFlipped);
 
+    // create a function that will add likes and keep track of the number when a user clicks the like button
     const likePic = () => {
-
+        // need to create an object that adds the likes and sends that data to the server
         const data = {
             likes: picture.likes + 1
         }
-
+        // use axios to send that data to the server
         axios.put(`/gallery/like/${picture.id}`, data)
             .then(response => {
                 console.log(response);
+                // re-render getPictures to display on the DOM
                 getPictures();
             }).catch(err => {
                 console.log('There was an error in the PUT route', err);
             });
-
-            console.log(picture);
-
     }
 
     return (
@@ -31,7 +30,7 @@ function GalleryItem({ picture, getPictures, pictureGallery }) {
             <div className="flex-box-display-child" onClick={() => setIsFlipped(!isFlipped)}>
                 {isFlipped ? (
                     <div>
-                        <p>{picture.description}</p>
+                        <p className="descriptionClass">{picture.description}</p>
                     </div>
                 ) : (
                     <div>
@@ -42,8 +41,8 @@ function GalleryItem({ picture, getPictures, pictureGallery }) {
             </div>
 
             <div>
-                <button onClick={likePic}>Like</button>
-                <p>Likes: {picture.likes}</p>
+                <button className="btn btn-secondary btn-sm space-between" onClick={likePic}>Like</button>
+                <p className="likeDisplay">Likes: {picture.likes}</p>
             </div>
         </div>
     )

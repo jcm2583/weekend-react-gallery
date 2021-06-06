@@ -10,6 +10,7 @@ function App() {
   //create a state will store the images
   const [pictureGallery, setPictureGallery] = useState([])
 
+
   useEffect( () => {
     getPictures()
   }, [])
@@ -20,6 +21,8 @@ function App() {
     console.log('GET request has been triggered');
     // use axios to get pics from /gallery path
     axios.get('/gallery').then( response => {
+      console.log(response.data);
+    // send the data retrieved to the picureGallery variable
       setPictureGallery(response.data);
     }).catch ( err => {
       console.log('There was an error in the GET route', err);
