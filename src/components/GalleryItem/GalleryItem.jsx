@@ -42,7 +42,7 @@ function GalleryItem({ picture, getPictures, pictureGallery }) {
 
             <div>
                 <button className="btn btn-outline-dark space-between" onClick={likePic}>Like</button>
-                <p className="likeDisplay">Likes: {picture.likes}</p>
+                <p className="likeDisplay">{picture.likes} people like this!</p>
             </div>
         </div>
     )
