@@ -7,7 +7,7 @@ function GalleryList({ pictureGallery, getPictures }) {
 
     return (
 
-        <div className="flex-container">
+        <div>
             {pictureGallery.map(picture => {
 
                 return (

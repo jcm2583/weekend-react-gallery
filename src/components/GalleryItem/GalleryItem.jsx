@@ -27,7 +27,7 @@ function GalleryItem({ picture, getPictures, pictureGallery }) {
 
     return (
         <div>
-            <div className="flex-box-display-child" onClick={() => setIsFlipped(!isFlipped)}>
+            <div onClick={() => setIsFlipped(!isFlipped)}>
                 {isFlipped ? (
                     <div>
                         <p className="descriptionClass">{picture.description}</p>
